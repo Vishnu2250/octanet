@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Acme;
+}
+.logo{
+    height: 10vh;
+    width: 22vw;
+}
+.social{
+    height: 20px;
+    width: 20px;
+    margin: 1rem;
+}
+.picSize{
+    height: 450px;
+    width: 300px;
+    margin: 0.5rem;
+}
+.pics{
+    height: 360px;
+    width: 270px;
+    margin: 0.5rem;
+}
+.pic{
+    height: 360px;
+    width: 270px;
+    margin: 0.5rem;
+}
+body{
+    background: url("./images/pic6.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: black;
+}
+hr{
+    height: 1rem;
+    background-color: #ffbf00;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #38454D;
+}
+header nav .contents ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    list-style: none;
+}
+header nav .contents ul li{
+    padding: 1rem 0.5rem;
+    color: white;
+}
+main .card{
+    background: transparent;
+    box-shadow: 2px 4px 8px 4px rgba(255,255,255, 1);
+    margin: 2rem;
+}
+.card form .components ul{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    list-style: none;
+    background-color: rgba(0,0,0, 0.7);
+    text-align: center;
+    margin-top: 2rem;
+}
+.card form .components ul li{
+    margin: 1rem;
+}
+.card form .components ul li .compo{
+    color: white;
+}
+.card form .components ul li .compo p{
+    font-size: larger;
+    margin: 0.3rem;
+}
+.card form .components ul li .compo input{
+    padding: 0.5rem;
+}
+button{
+    color: white;
+    padding:0.5rem;
+    font-weight: 600;
+    background-color: #ffba51;
+    outline: none;
+    border: none;
+}
+.card .nums ul{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    list-style: none;
+}
+.card .nums .num {
+    border: 1.5px solid #ffbf00;
+    margin: 1rem;
+    text-align: center;
+}
+.card .nums .num .numbers{
+    font-size: 10rem;
+    font-weight: 600;
+    color: #ffbf00;
+}
+.card .nums .num .heading, 
+.card .about .about-us h4, 
+.card .tour h4, 
+.card .testimony h4,
+footer .items .one h4,
+footer .items .two h4,
+footer .items .three h4,
+footer .items .four h4{
+    font-size: larger;
+    font-weight: 600;
+    color: #ffbf00;
+}
+.card .nums .num .text,
+.card .about .about-us p,
+.card .testimony p,
+footer .items .one p, footer .items .four p{
+    color: #808080;
+    padding: 1rem;
+}
+.card .about{
+    text-align: center;
+}
+.card .about .about-us .button{
+    background: transparent;
+    color: #ffbf00;
+    border: 2px solid #ffbf00;
+}
+.card .tour{
+    text-align: center;
+}
+.card .testimony{
+    background: url("");
+    text-align: center;
+} 
+footer .items{
+    text-align: center;
+}
+footer .items .two ul, footer .items .three ul{
+    list-style: none;
+}
+footer .items .two ul li, footer .items .three ul li {
+    padding: 0.5rem;
+    color: #808080;
+}
+footer .images img{
+    margin-left: 4rem;
+}
+footer .items .four ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (min-width:700px) {
+    body{
+        background: url("./images/scenary.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: black;
+    }
+    .logo{
+        height: 20vh;
+        width: 40vw;
+    }
+    .card form .components ul{
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 10rem;
+    } 
+    .card .nums ul{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .card .tour .images{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    footer .images .pic{
+        height: 200px;
+        width: 150px;
+        margin-left: 0.5rem;
+    }
+    footer .items{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (min-width:1200px) {
+    body{
+        background: url("./images/scenary.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: black;
+    }
+    header nav .contents ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header nav .contents ul li{
+        padding: 1rem  0.5rem;
+    }
+    .card form .components ul{
+        grid-template-columns: repeat(5,1fr);
+        margin-top: 15rem;
+    } 
+    button{
+        margin-top: 2rem;
+    }
+    .card .nums ul{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .card .about{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card .tour .images{
+        grid-template-columns: repeat(4,1fr);
+    }
+    footer .items{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+}
